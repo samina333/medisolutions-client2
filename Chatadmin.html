@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Admin Chat</title>
+ <link rel="icon" type="image/png" href="img/icons/chat.png">
+<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c46376dd-7651-4f43-a17f-43e1043f6e9a"> </script>
+</head>
+<body class="fixed-sn #fafafa grey lighten-5">
+    <header>
+      <!-- Sidebar navigation -->
+      <div id="slide-out" class="side-nav #ffffff white text-dark fixed">
+        <ul class="custom-scrollbar ">
+          <!-- Logo -->
+          <div class="container-fluid text-white font-weight-bold"style="background-color: #01C0C8; height: 80px; font-size: 18px;" max-height="80px">
+          <li class="">
+            <br>
+           <img src="img/icons/ss.png" class="ml-auto"><span class="ml-2 text-white"> Medisolutions</span>
+          </div>
+          <div class="chip mt-2 mb-2 chip-lg #e3f2fd blue lighten-5 text-dark">
+          <img class="avatar avatar-40 img-circle img-fluid" src="img/icons/pff.png" class="img-fluid">Admin MD
+          </div>
+          <!-- Side navigation links -->
+          <li>
+            <ul class="list-group list-group-flush font-weight-bold mt-3">
+              <li><a class="list-group-item mt-1 mb-1 waves-effect grey-text" href="Adminportal.html"><i class="fa fa-tachometer grey-text"></i> Dashboard</a>
+              </li>
+              <li><a class="list-group-item mt-1 mb-1 waves-effect grey-text" href="Customers.html"><i class="fa fa-user-circle-o  grey-text"></i> Customers</a>
+              </li>
+               <li><a class="list-group-item mt-1 mb-1 waves-effect grey-text" href="adminrepair.html"><i class="fa fa-bar-chart grey-text"></i> Repair Status</a>
+              </li>
+               <li><a class="list-group-item mt-1 mb-1 waves-effect text-info" href="Chatadmin.hyml"><i class="fa fa-comments text-info"></i> Messages</a>
+              </li>
+               <li><a class="list-group-item  mt-1 mb-1 waves-effect grey-text" href="Pendingorders.html"><i class="fa fa-table grey-text"></i> Pending Orders</a>
+              </li>
+              <li><a class="list-group-item  mt-1 mb-1 waves-effect grey-text" href="Completedorders.html"><i class="fa fa-bar-chart grey-text"></i> Completed Orders</a>
+              </li>
+               <li><a class="list-group-item  mt-1 mb-1 waves-effect grey-text" href="adminsales.html"><i class="fa fa-line-chart grey-text"></i> Sales</a>
+              </li>
+            </ul>
+          </li>
+          <!--/. Side navigation links -->
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+      </div>
+      <!--/. Sidebar navigation -->
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav" style="background-color: #01C0C8;">
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+          <a href="#" data-activates="slide-out" class="button-collapse text-white"><i class="fa fa-bars text-white"></i></a>
+        </div>
+        <!-- Breadcrumb-->
+        <ul class="mr-auto">
+           <form class="form-inline active-cyan-4 ml-lg-2 ">
+            <input class="form-control form-sm" placeholder="Search" aria-labe="Search" id="btt1">
+            <a class="fa fa-search btn btn-outline-white text-white btn-md" id="b11"></a>
+          </form>
+        </ul>
+        <ul class="nav navbar-nav nav-flex-icons ml-lg-auto ">
+          <a class="btn btn-md btn-outline-white">Logout <i class="fa fa-sign-out"></i></a>
+      </ul>
+  </nav>
+ <!-- /.Navbar -->
+</header>
+
+ <!-----------------------------Double navigation Ends Here--------------------------------------->
+
+    <!--------------------------------------------Main layout Starts-------------------->
+    <main class="mb-5 mt-5">
+
+      <!-----------------Search Box-------------------------->
+      <div class="card container-fluid mt-5 mb-4 wow fadeIn" >
+        <!--Card content-->
+        <div class="card-body d-sm-flex justify-content-between">
+          <h4 class="mb-2 font-weight-bolder mb-sm-0 pt-1">
+            <a href="#" target="_blank" class="text-dark">Dashboard</a>
+           </h4>
+        </div>
+      </div>
+<!-----------------------------------------------Chat admin------------>
+<!-- ----------------Nav tabs----------------------------->
+<ul class="nav nav-tabs md-tabs nav-justified" id="c1"  role="tablist">
+  <li class="nav-item" >
+  <a class="nav-link font-weight-bold h3-responsive" data-toggle="tab" href="#panel555" role="tab">
+  <i class="fa fa-comments-o pr-2"></i>Chat Box</a>
+  </li>
+</ul>
+<!-----------------------------Members lIst--------------------------------------->
+<div class="tab-content card">
+  <div class="tab-pane fade in show active" id="panel555" role="tabpanel ">
+    <!-- Nav tabs -->
+    <div class="row" >
+      <div class="col-md-4 col-xl-4 px-0 card" >
+        <ul class="nav md-pills pills-primary flex-column" role="tablist" id="tablist">
+          <li class="nav-item ">
+           <a  class="nav-link active d-flex justify-content-between " data-toggle="tab"
+               href=" #panel22" role="tab">
+            <img src="img/icons/profile.png" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+            <div class="text-small  font-weight-bold">
+            <strong>Ahmed Hassan <i class="fa fa-star-half-o"></i></strong>
+            <hr>
+            <p class="last-message">I have a query??</p>
+            </div>
+            <div class="chat-footer">
+            <p class="text-smaller  mb-0">2 days ago <i class="fa fa-clock-o"></i></p>
+            <span class=" float-right"><i class="fa fa-check" aria-hidden="true"></i></span>
+            </div><!-----------caht footer------------------>
+            </a>
+          </li><!-----1 member end--->
+            <hr class="bg-light">
+           <li class="nav-item">
+            <a  class="nav-link d-flex justify-content-between" data-toggle="tab" href="#panel23" role="tab">
+            <img src="img/icons/man.png" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+            <div class="text-small  font-weight-bold">
+            <strong>Ali Hassan <i class="fa fa-star"></i></strong>
+            <hr>
+            <p class="last-message">Hi! Are you there????</p>
+            </div>
+            <div class="chat-footer">
+            <p class="text-smaller  mb-0">5 min ago <i class="fa fa-clock-o"></i></p>
+            <span class=" float-right"><i class="fa fa-check" aria-hidden="true"></i></span>
+             </div>
+            </a>
+            </li><!------------2 memeber end---------->
+             <li class="nav-item">
+              <a  class="nav-link d-flex justify-content-between" data-toggle="tab" href="#panel24" role="tab">
+              <img src="img/icons/profile.png" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+              <div class="text-small  font-weight-bold">
+              <strong>Saim Butt <i class="fa fa-star-o"></i></strong>
+              <hr>
+              <p class="last-message">Updated??</p>
+              </div>
+              <div class="chat-footer">
+              <p class="text-smaller  mb-0">35 min ago <i class="fa fa-clock-o"></i></p>
+              <span class=" float-right"><i class="fa fa-check" aria-hidden="true"></i></span>
+              </div>
+              </a>
+             </li><!----3 memeber ends---->
+             <li class="nav-item">
+              <a  class="nav-link d-flex justify-content-between" data-toggle="tab" href="#panel25" role="tab">
+              <img src="img/icons/man.png" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+              <div class="text-small  font-weight-bold">
+              <strong>Maha Ali <i class="fa fa-star"></i></strong>
+              <hr>
+               <p class="last-message">Shipping process????</p>
+               </div>
+               <div class="chat-footer">
+               <p class="text-smaller  mb-0">1 day ago <i class="fa fa-clock-o"></i></p>
+                <span class=" float-right"><i class="fa fa-check" aria-hidden="true"></i></span>
+                </div>
+              </a>
+            </li><!----------------4 memebr end here---------->
+        </ul>
+      </div>
+      <div class="col-md-8 col-xl-8">
+        <!-- Tab panels -->
+        <!-----------------------------------CHat Messages---------------------------->
+        <div class="tab-content vertical">
+          <!-- Panel 2 -->
+          <div class="tab-pane fade show active" id="panel22" role="tabpanel">
+             <div class="col-md-8 col-xl-12 pl-md-3 px-lg-auto px-0">
+
+        <div class="chat-message">
+
+          <ul class="list-unstyled chat">
+            <li class="d-flex justify-content-between mb-4">
+              <div class="chat-body white p-3 ml-2 z-depth-1 ml-auto">
+                <div class="header">
+                  <strong class="primary-font"><i class="fa fa-user-o"></i> Ahmed Hassan</strong>
+                  <small class="pull-right text-muted"><i class="far fa-clock"></i> 12 mins ago</small>
+                </div>
+                <hr class="w-100">
+                <p class="mb-0">
+                  Hi! I want to ask related to repairing issue??
+                </p>
+                <p class="text-muted">seen</p>
+              </div>
+
+            </li>
+            <li class="d-flex justify-content-between mb-4 ">
+              <div class="chat-body white p-3 z-depth-1 bg-grey">
+                <div class="header">
+                  <strong class="primary-font"><i class="fa fa-user"></i> Manager MediSol </strong>
+                  <small class="pull-right text-muted"><i class="fa fa-clock"></i> 13 mins ago</small>
+                </div>
+                <hr class="w-100">
+                <p class="mb-0">
+                  Thankyou for contacting us. Kindly tell us your problem?? How can we help you.
+                   <p class="text-muted">typing</p>
+                </p>
+              </div>
+            </li>
+
+            <li class="white">
+              <div class="form-group basic-textarea">
+                <textarea class="form-control pl-2 my-0" id="exampleFormControlTextarea2" rows="3" placeholder="Type your message here..."></textarea>
+              </div>
+            </li>
+            <button type="button" class="btn btn-info btn-rounded btn-sm waves-effect waves-light float-right">Send</button>
+          </ul>
+
+        </div>
+
+      </div>
+      <!-- Grid column -->
+          </div>
+          <!-- Panel 2 -->
+          <!-- Panel 3 -->
+          <div class="tab-pane fade" id="panel23" role="tabpanel">
+            <!-- Grid column -->
+      <div class="col-md-8 col-xl-12 pl-md-3 px-lg-auto px-0">
+
+        <div class="chat-message">
+
+           <ul class="list-unstyled chat">
+            <li class="d-flex justify-content-between mb-4">
+              <div class="chat-body white p-3 ml-2 z-depth-1 ml-auto">
+                <div class="header">
+                  <strong class="primary-font"><i class="fa fa-user-o"></i> Ali Hassan</strong>
+                  <small class="pull-right text-muted"><i class="far fa-clock"></i> 2 mins ago</small>
+                </div>
+                <hr class="w-100">
+                <p class="mb-0">
+                  Hi! I want to ask about my shipping??
+                </p>
+                <p class="text-muted">seen</p>
+              </div>
+
+            </li>
+            <li class="d-flex justify-content-between mb-4 ">
+              <div class="chat-body white p-3 z-depth-1 bg-grey">
+                <div class="header">
+                  <strong class="primary-font"><i class="fa fa-user"></i> Manager </strong>
+                  <small class="pull-right text-muted"><i class="fa fa-clock"></i> 1 mins ago</small>
+                </div>
+                <hr class="w-100">
+                <p class="mb-0">
+                  How can we help you sir? Kindly provie all the details properly.
+                   <p class="text-muted">typing</p>
+                </p>
+              </div>
+            </li>
+            <li class="white">
+              <div class="form-group basic-textarea">
+                <textarea class="form-control pl-2 my-0" id="exampleFormControlTextarea2" rows="3" placeholder="Type your message here..."></textarea>
+              </div>
+            </li>
+            <button type="button" class="btn btn-info btn-rounded btn-sm waves-effect waves-light float-right">Send</button>
+          </ul>
+
+        </div>
+
+      </div>
+      <!-- Grid column -->
+          </div>
+        
+  <!-- Panel 3 -->
+          <div class="tab-pane fade" id="panel24" role="tabpanel">
+            <!-- Grid column -->
+      <div class="col-md-8 col-xl-12 pl-md-3 px-lg-auto px-0">
+
+        <div class="chat-message">
+
+           <ul class="list-unstyled chat">
+            <li class="d-flex justify-content-between mb-4">
+              <div class="chat-body white p-3 ml-2 z-depth-1 ml-auto">
+                <div class="header">
+                  <strong class="primary-font"><i class="fa fa-user-o"></i> Saim Butt</strong>
+                  <small class="pull-right text-muted"><i class="far fa-clock"></i> 2 mins ago</small>
+                </div>
+                <hr class="w-100">
+                <p class="mb-0">
+                  Hi! I want to ask about my shipping??
+                </p>
+                <p class="text-muted">seen</p>
+              </div>
+
+            </li>
+            <li class="d-flex justify-content-between mb-4 ">
+              <div class="chat-body white p-3 z-depth-1 bg-grey">
+                <div class="header">
+                  <strong class="primary-font"><i class="fa fa-user"></i> CEO Medisolutions </strong>
+                  <small class="pull-right text-muted"><i class="fa fa-clock"></i> 1 mins ago</small>
+                </div>
+                <hr class="w-100">
+                <p class="mb-0">
+                  How can we help you sir? Kindly provie all the details properly.
+                </p>
+              </div>
+            </li>
+            <li class="white">
+              <div class="form-group basic-textarea">
+                <textarea class="form-control pl-2 my-0" id="exampleFormControlTextarea2" rows="3" placeholder="Type your message here..."></textarea>
+              </div>
+            </li>
+            <button type="button" class="btn btn-info btn-rounded btn-sm waves-effect waves-light float-right">Send</button>
+          </ul>
+
+        </div>
+
+      </div>
+      <!-- Grid column -->
+          </div>
+  
+  <!-- Panel 1 -->
+  <!-- Panel 3 -->
+          <div class="tab-pane fade" id="panel25" role="tabpanel">
+            <!-- Grid column -->
+      <div class="col-md-8 col-xl-12 pl-md-3 px-lg-auto px-0">
+
+        <div class="chat-message">
+
+           <ul class="list-unstyled chat">
+            <li class="d-flex justify-content-between mb-4">
+              <div class="chat-body white p-3 ml-2 z-depth-1 ml-auto">
+                <div class="header">
+                  <strong class="primary-font"><i class="fa fa-user-o"></i> Maha Ali</strong>
+                  <small class="pull-right text-muted"><i class="far fa-clock"></i> 2 mins ago</small>
+                </div>
+                <hr class="w-100">
+                <p class="mb-0">
+                  Hi! I want to ask about my shipping??
+                </p>
+                <p class="text-muted">seen</p>
+              </div>
+
+            </li>
+            <li class="d-flex justify-content-between mb-4 ">
+              <div class="chat-body white p-3 z-depth-1 bg-grey">
+                <div class="header">
+                  <strong class="primary-font"><i class="fa fa-user"></i> CEO Medisolutions </strong>
+                  <small class="pull-right text-muted"><i class="fa fa-clock"></i> 1 mins ago</small>
+                </div>
+                <hr class="w-100">
+                <p class="mb-0">
+                  How can we help you sir? Kindly provie all the details properly.
+                </p>
+              </div>
+            </li>
+            <li class="white">
+              <div class="form-group basic-textarea">
+                <textarea class="form-control pl-2 my-0" id="exampleFormControlTextarea2" rows="3" placeholder="Type your message here..."></textarea>
+              </div>
+            </li>
+            <button type="button" class="btn btn-info btn-rounded btn-sm waves-effect waves-light float-right">Send</button>
+          </ul>
+
+        </div>
+
+      </div>
+      <!-- Grid column -->
+          </div>
+          <!-- Panel 3 -->
+        </div>
+      </div>
+    </div>
+    <!-- Nav tabs -->
+
+  </div>
+  <!-- Panel 1 -->
+</div>
+<!-- Tab panels -->
+ </main>
+    <!--------------------------------------/Main layout---------------------> 
+<!---------------feeedback modal---->
+ <!-------------------------------------Footer-->
+ <footer class="page-footer text-center text-md-left pt-4 ">
+      <!--Copyright-->
+      <div class="footer-copyright py-3 text-center #ffffff white">
+        <div class="container-fluid  text-dark">
+          © 2020 Copyright: <a href="#" class="text-dark font-weight-bolder"> Medisolutions.com </a>
+        </div>
+      </div>
+      <!--/.Copyright-->
+</footer>
+<!--/.--------------------------Footer-------------------------------->
+<!-------------------------------------JS REFERENCE FILES LINK--------------------->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/bar.js"></script>
+    <script>
+
+        $(document).ready(function() {
+   $('.mdb-select').material_select();
+ });
+   </script> 
+    <script type="text/javascript">
+     // SideNav Button Initialization
+$(".button-collapse").sideNav();
+// SideNav Scrollbar Initialization
+var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+Ps.initialize(sideNavScrollbar);
+   </script> 
+   <script type="text/javascript">
+     $(document).ready(() => {
+  // SideNav Initialization
+  $(".button-collapse").sideNav();
+
+  new WOW().init();
+});
+   </script>
+<script type="text/javascript">
+    //line
+//line
+var ctxL = document.getElementById("lineChart").getContext('2d');
+var myLineChart = new Chart(ctxL, {
+type: 'line',
+data: {
+labels: ["January", "February", "March", "April", "May", "June", "July"],
+datasets: [{
+label: "Customers Request",
+data: [65, 59, 80, 81, 56, 55, 40],
+backgroundColor: [
+'rgba(105, 0, 132, .2)',
+],
+borderColor: [
+'rgba(200, 99, 132, .7)',
+],
+borderWidth: 2
+},
+
+{
+label: "Completed Orders",
+data: [28, 48, 40, 19, 86, 27, 90],
+backgroundColor: [
+'rgb(0,255,127)',
+],
+borderColor: [
+'rgb(34,139,34)',
+],
+borderWidth: 2
+}
+]
+},
+options: {
+responsive: true
+}
+});
+</script>
+
+</body>
+</html>

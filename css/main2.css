@@ -1,0 +1,129 @@
+
+body
+{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#mn1
+{
+  line-height: 1.6;
+ 
+}
+#nav
+{
+<<<<<<< HEAD
+  background-color:  #01C0C8;
+  font-weight: bolder;
+}
+=======
+<<<<<<< HEAD
+  background-color:  #01C0C8;
+  font-weight: bolder;
+}
+=======
+  background-color:  #2E2E2E;
+  font-weight: bolder;
+}
+#foot1
+{
+  background-color:  #2E2E2E;
+}
+>>>>>>> e54d1199679c8884de012817fb7301bc211c4666
+>>>>>>> b92bb6d6f2c0d12041a1d6de3386cd6c5494dc89
+
+#nav1 
+{
+  font-size: 18px;
+  line-height: 40px;
+  
+  
+}
+#contact 
+{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b92bb6d6f2c0d12041a1d6de3386cd6c5494dc89
+  background-color:  #fff;
+  color: black;
+}
+.card-header
+{
+  background-color: #01C0C8;
+<<<<<<< HEAD
+=======
+=======
+  background-color: #212121;
+}
+.card-header
+{
+  background-color: #212121;
+>>>>>>> e54d1199679c8884de012817fb7301bc211c4666
+>>>>>>> b92bb6d6f2c0d12041a1d6de3386cd6c5494dc89
+}
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+<<<<<<< HEAD
+    background: #01C0C8  !important;
+=======
+<<<<<<< HEAD
+    background: #01C0C8  !important;
+=======
+    background: #000  !important;
+>>>>>>> e54d1199679c8884de012817fb7301bc211c4666
+>>>>>>> b92bb6d6f2c0d12041a1d6de3386cd6c5494dc89
+  }
+}
+
+.rgba-gradient {
+  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(72, 15, 144, 0.4) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.5), rgba(72, 15, 144, 0.4) 100%)));
+  background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+}
+
+
+
+.md-form label {
+  color: #000000;
+}
+
+h6 {
+  line-height: 1.7;
+}
+.btn 
+<<<<<<< HEAD
+{background-color: #01C0C8;
+=======
+<<<<<<< HEAD
+{background-color: #01C0C8;
+=======
+{background-color: #000;
+>>>>>>> e54d1199679c8884de012817fb7301bc211c4666
+>>>>>>> b92bb6d6f2c0d12041a1d6de3386cd6c5494dc89
+  
+}

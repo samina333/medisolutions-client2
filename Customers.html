@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Customers</title>
+ <link rel="icon" type="image/png" href="img/icons/profile.png">
+<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- MDBootstrap Datatables  -->
+    <link href="css/addons/datatables.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body class="fixed-sn #fafafa grey lighten-5 ">
+   <header>
+      <!-- Sidebar navigation -->
+      <div id="slide-out" class="side-nav #ffffff white text-dark fixed">
+        <ul class="custom-scrollbar ">
+          <!-- Logo -->
+          <div class="container-fluid text-white font-weight-bold"style="background-color: #01C0C8; height: 80px; font-size: 18px;" max-height="80px">
+          <li class="">
+            <br>
+           <img src="img/icons/ss.png" class="ml-auto"><span class="ml-2 text-white"> Medisolutions</span>
+          </div>
+          <div class="chip mt-2 mb-2 chip-lg #e3f2fd blue lighten-5 text-dark">
+          <img class="avatar avatar-40 img-circle img-fluid" src="img/icons/pff.png" class="img-fluid">Admin MD
+          </div>
+          <!-- Side navigation links -->
+          <li>
+            <ul class="list-group list-group-flush font-weight-bold mt-3">
+              <li><a class="list-group-item mt-1 mb-1 waves-effect grey-text" href="Adminportal.html"><i class="fa fa-tachometer grey-text"></i> Dashboard</a>
+              </li>
+              <li><a class="list-group-item mt-1 mb-1 waves-effect text-info" href="#"><i class="fa fa-user-circle-o  text-info"></i> Customers</a>
+              </li>
+               <li><a class="list-group-item mt-1 mb-1 waves-effect grey-text" href="adminrepair.html"><i class="fa fa-bar-chart grey-text"></i> Repair Status</a>
+              </li>
+               <li><a class="list-group-item mt-1 mb-1 waves-effect" href="Chatadmin.html"><i class="fa fa-comments grey-text"></i> Messages</a>
+              </li>
+               <li><a class="list-group-item  mt-1 mb-1 waves-effect grey-text" href="Pendingorders.html"><i class="fa fa-table grey-text"></i> Pending Orders</a>
+              </li>
+              <li><a class="list-group-item  mt-1 mb-1 waves-effect grey-text" href="Completedorders.html"><i class="fa fa-bar-chart grey-text"></i> Completed Orders</a>
+              </li>
+               <li><a class="list-group-item  mt-1 mb-1 waves-effect grey-text" href="adminsales.html"><i class="fa fa-line-chart grey-text"></i> Sales</a>
+              </li>
+            </ul>
+          </li>
+          <!--/. Side navigation links -->
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+      </div>
+      <!--/. Sidebar navigation -->
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav" style="background-color: #01C0C8;">
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+          <a href="#" data-activates="slide-out" class="button-collapse text-white"><i class="fa fa-bars text-white"></i></a>
+        </div>
+        <!-- Breadcrumb-->
+        <ul class="mr-auto">
+           <form class="form-inline active-cyan-4 ml-lg-2 ">
+            <input class="form-control form-sm" placeholder="Search" aria-labe="Search" id="btt1">
+            <a class="fa fa-search btn btn-outline-white text-white btn-md" id="b11"></a>
+          </form>
+        </ul>
+        <ul class="nav navbar-nav nav-flex-icons ml-lg-auto ">
+          <a class="btn btn-md btn-outline-white">Logout <i class="fa fa-sign-out"></i></a>
+      </ul>
+  </nav>
+ <!-- /.Navbar -->
+</header>
+ <!-----------------------------Double navigation Ends Here--------------------------------------->
+
+    <!--------------------------------------------Main layout Starts-------------------->
+    <main class="mb-5 mt-5">
+      <!-----------------Search Box-------------------------->
+      <div class="card mt-5 container-fluid mb-4 wow fadeIn">
+        <!--Card content-->
+        <div class="card-body d-sm-flex justify-content-between">
+          <h4 class="mb-2 font-weight-bolder mb-sm-0 pt-1">
+            <a href="#" target="_blank" class="text-dark">Dashboard</a>
+           </h4>
+        </div>
+      </div>
+<!---------------------------------------Repair Status------------------------------------->
+<!-----------------------------------Repair Status---------------->
+<div class=" container mt-4 mb-4">
+  <div class="row card-deck">
+<div class="card col-lg-11  col-md-12 ">
+  <div class="container mt-4 mb-2 text-dark font-weight-bold h4-responsive text-center">
+  <h6 class="text-left font-weight-bold">Registered Customers 
+    <p class="grey-text font-small mt-2 mb-1 text-monospace">This contains all the data of newly registered customers</p> </h6>
+</div>
+<table class="table table-responsive table-hover  table-bordered" >
+<thead>
+    <tr class="font-weight-bold">
+      <th scope="col">#</th>
+      <th scope="col">First_Name</th>
+      <th scope="col">Last_Name</th>
+      <th scope="col">Email</th>
+      <th scope="col" colspan="2"> Location</th>
+      <th scope="col">Mobile_No</th>
+      <th scope="col">Device_Name</th>
+      <th scope="col">Date</th>
+      <th scope="col">City</th>
+      <th scope="col">Payment</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td colspan="2">United Kingdom</td>
+      <td>0012011212</td>
+      <td>Ventilator</td>
+      <td>21-07-2020</td>
+      <td>Berlin</td>
+      <td>200$</td>
+      <td><span class="badge badge-warning">Pending</span></td>
+    </tr>
+     <tr>
+      <th scope="row">2</th>
+      <td>John</td>
+      <td >Larry the Bird</td>
+      <td>@twitter</td>
+      <td colspan="2">United Kingdom</td>
+      <td>0012011212</td>
+      <td>Ventilator</td>
+      <td>21-07-2020</td>
+      <td>Berlin</td>
+       <td>200$</td>
+      <td><span class="badge badge-primary">Completed</span></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td colspan="2">United Kingdom</td>
+      <td>0012011212</td>
+      <td>Ventilator</td>
+      <td>21-07-2020</td>
+      <td>Berlin</td>
+       <td>200$</td>
+      <td><span class="badge badge-danger">Waiting</span></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Ahsan</td>
+      <td >Larry the Bird</td>
+      <td>@twitter</td>
+      <td colspan="2">United Kingdom</td>
+      <td>0012011212</td>
+      <td>Ventilator</td>
+      <td>21-07-2020</td>
+      <td>Berlin</td>
+       <td>200$</td>
+      <td><span class="badge badge-info">Approved</span></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Shahan</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td colspan="2">United Kingdom</td>
+      <td>0012011212</td>
+      <td>Ventilator</td>
+      <td>21-07-2020</td>
+      <td>Berlin</td>
+       <td>200$</td>
+      <td><span class="badge badge-warning">Pending</span></td>
+    </tr>
+     <tr>
+      <th scope="row">6</th>
+      <td>Adeel</td>
+      <td >Larry the Bird</td>
+      <td>@twitter</td>
+      <td colspan="2">United Kingdom</td>
+      <td>0012011212</td>
+      <td>Ventilator</td>
+      <td>21-07-2020</td>
+      <td>Berlin</td>
+       <td>200$</td>
+      <td><span class="badge badge-primary">Completed</span></td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Marie</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td colspan="2">United Kingdom</td>
+      <td>0012011212</td>
+      <td>Ventilator</td>
+      <td>21-07-2020</td>
+      <td>Berlin</td>
+       <td>200$</td>
+      <td><span class="badge badge-danger">Waiting</span></td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Asad</td>
+      <td >Larry the Bird</td>
+      <td>@twitter</td>
+      <td colspan="2">United Kingdom</td>
+      <td>0012011212</td>
+      <td>Ventilator</td>
+      <td>21-07-2020</td>
+      <td>Berlin</td>
+       <td>200$</td>
+      <td><span class="badge badge-info">Approved</span></td>
+    </tr>
+  </tbody>
+</table>
+</div><!--col--->
+</div><!--row--->
+</div><!--container--->
+ </main>
+<!--/Main layout-->
+ <!--------------------------------whats new nitify--------------->
+<div class="modal top" id="WNew" tabindex="-1" role="dialog" aria-labelledby="WNew" aria-hidden="true" >
+  <div class="modal-dialog modal-side modal-top-right modal-sm " role="document">
+    <div class="modal-content" >
+      <div class="modal-header" style="background-color: #01C0C8;">
+        <h5 class="modal-title h5-responsive text-white fa fa-info-circle" id="WNew"> Important Updates</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="font-size: 16px; font-family: 'Times';">
+        <div class="row bg-white">
+       <div class="col-md-6">
+        <p class="font-weight-bold" >
+          Change to the User Id.
+          <p class="" style="font-size: 14px;"> with todays update you will notice that...</p>
+          </p>
+       </div>
+       <div class="col-md-6">
+        <p class="grey-text" >
+          11 hours ago.
+          </p>
+       </div>
+      </div>
+ 
+       <div class="row bg-light">
+       <div class="col-md-6">
+        <p class="font-weight-bold" >New User's Notification.
+        <p class="" style="font-size: 14px;">
+          we have added new section to user's...
+        </p>
+         </p>
+       </div>
+       <div class="col-md-6">
+        <p class="grey-text" >
+          2 days ago.
+          </p>
+       </div>
+      </div>
+
+   <div class="row bg-white">
+       <div class="col-md-6">
+        <p class="font-weight-bold" >
+          Auto Saving Mode For Transactions
+          <p style="font-size: 14px;"> It is to inform you that auto saving mode..</p>
+          </p>
+       </div>
+       <div class="col-md-6">
+        <p class="grey-text" >
+          13 hours ago.
+          </p>
+       </div>
+      </div>
+
+
+   <div class="row bg-light">
+       <div class="col-md-6">
+        <p class="font-weight-bold">
+         Agency Commission for Transaction Feature
+         <p style="font-size: 14px;"> This is a quick messsage to inform you that...</p>
+          </p>
+       </div>
+       <div class="col-md-6">
+        <p class="grey-text">
+          1 day ago.
+          </p>
+       </div>
+      </div>
+
+
+    <div class="row bg-white">
+       <div class="col-md-6">
+        <p class="font-weight-bold">
+          Change to the property Id.
+          <p> wit todays update you will notice that...</p>
+          </p>
+       </div>
+       <div class="col-md-6">
+        <p class="grey-text" >
+          11 hours ago.
+          </p>
+       </div>
+      </div>
+ 
+       <div class="row bg-light">
+       <div class="col-md-6">
+        <p class="font-weight-bold" >New User's Notification.
+        <p style="font-size: 14px;">
+          we have added new section to user's...
+        </p>
+         </p>
+       </div>
+       <div class="col-md-6">
+        <p class="grey-text">
+          2 days ago.
+          </p>
+       </div>
+      </div>
+
+   <div class="row bg-white">
+       <div class="col-md-6">
+        <p class="font-weight-bold">
+          Auto Saving Mode For Transactions
+          <p style="font-size: 14px;"> It is to inform you that auto saving mode..</p>
+          </p>
+       </div>
+       <div class="col-md-6">
+        <p class="grey-text" >
+          13 hours ago.
+          </p>
+       </div>
+      </div>
+
+
+   <div class="row bg-light">
+       <div class="col-md-6">
+        <p class="font-weight-bold" >
+         Agency Commission for Transaction Feature
+         <p style="font-size: 14px;"> This is a quick messsage to inform you that...</p>
+          </p>
+       </div>
+       <div class="col-md-6">
+        <p class="grey-text">
+          1 day ago.
+          </p>
+       </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<!----------------whats new notify-------->
+<!-------------------------------------Footer-->
+ <footer class="page-footer text-center text-md-left pt-4 ">
+      <!--Copyright-->
+      <div class="footer-copyright py-3 text-center #ffffff white">
+        <div class="container-fluid  text-dark">
+          © 2020 Copyright: <a href="#" class="text-dark font-weight-bolder"> Medisolutions.com </a>
+        </div>
+      </div>
+      <!--/.Copyright-->
+</footer>
+<!--/.--------------------------Footer-------------------------------->
+<!-------------------------------------JS REFERENCE FILES LINK--------------------->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="js/addons/datatables.min.js"></script>  
+
+    <script>
+
+        $(document).ready(function() {
+   $('.mdb-select').material_select();
+ });
+   </script> 
+    <script type="text/javascript">
+     // SideNav Button Initialization
+$(".button-collapse").sideNav();
+// SideNav Scrollbar Initialization
+var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+Ps.initialize(sideNavScrollbar);
+   </script> 
+   <script type="text/javascript">
+     $(document).ready(() => {
+  // SideNav Initialization
+  $(".button-collapse").sideNav();
+
+  new WOW().init();
+});
+   </script>
+   <script type="text/javascript">
+ // Basic example
+$(document).ready(function () {
+$('#dtBasicExample').DataTable({
+"ordering": false // false to disable sorting (or any other option)
+});
+$('.dataTables_length').addClass('bs-select');
+});
+   </script>
+</body>
+</html>

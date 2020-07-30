@@ -1,0 +1,99 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b92bb6d6f2c0d12041a1d6de3386cd6c5494dc89
+body
+{
+
+}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e54d1199679c8884de012817fb7301bc211c4666
+>>>>>>> b92bb6d6f2c0d12041a1d6de3386cd6c5494dc89
+.btn 
+{background-color: #01C0C8;
+  
+}
+  .card-list li.page-item {
+        height: 36px;
+      }
+      .card-list .form-check-input[type="checkbox"] + label:before, .form-check-input[type="checkbox"]:not(.filled-in) + label:after, label.btn input[type="checkbox"] + label:before, label.btn input[type="checkbox"]:not(.filled-in) + label:after {
+        margin-top: 0;
+      }
+      .card-list .form-check-input[type="checkbox"] + label, label.btn input[type="checkbox"] + label {
+        height: 15px;
+      }
+      .card-list .form-check {
+        height: 0;
+      }
+      .card-list .badge {
+        height: 18px;
+        margin-top: 3px;
+      }
+      .map-container-section {
+          overflow:hidden;
+          padding-bottom:56.25%;
+          position:relative;
+          height:0;
+        }
+        .map-container-section iframe {
+          left:0;
+          top:0;
+          height:100%;
+          width:100%;
+          position:absolute;
+        }
+#c1
+{
+	background-color: #01C0C8;
+}
+.avatar {
+  vertical-align: left;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+#m1:hover
+{
+background-color: #01C0C8;
+color: white;
+}
+
+.chip.chip-lg {
+height: 52px;
+line-height: 52px;
+border-radius: 26px;
+}
+.chip.chip-lg img {
+height: 52px;
+width: 52px;
+}
+.card-header
+{
+	background-color: #01C0C8;
+	color: white;
+}
+.list-group-item
+{
+
+	font-size: 16px; 
+	font-weight: normal;
+	color:#90979D;
+}
+
+@media (min-width:280px) and (max-width: 330px)
+{
+#btt1
+{
+width: 110px; 
+height:30px;
+}
+#b11
+{
+width: 50px; 
+height:30px;
+}
+
+}
